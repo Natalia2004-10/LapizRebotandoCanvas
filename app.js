@@ -60,19 +60,13 @@ let lapiz={//objeto porque tiene {}
         this.y2 = this.y2 + this.vY *dT/1000;
         this.y3 = this.y3 + this.vY *dT/1000;
         this.y4 = this.y4 + this.vY *dT/1000;
-        if(400 - this.y < -10){
+        if(400 - this.y3 < -10){
             this.vY = -this.vY}
-        if (400 - this.y3 < -10){
-            this.vY = -this.vY
-        }
-        if(400 - this.x < -10 ){
+        if(400 - this.x3 < -10 ){
             this.vX = -this.vX}
         if(this.y - 400 < -10) {
             this.vY = -this.vY}
-        if(this.y3 - 400 < -10){
-            this.vY = -this.vY
-        }
-        if(this.x - 400 < -10 ){
+        if(this.x2 - 400 < -10 ){
             this.vX = -this.vX}
     }
 }
