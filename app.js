@@ -60,13 +60,13 @@ let lapiz={//objeto porque tiene {}
         this.y2 = this.y2 + this.vY *dT/1000;
         this.y3 = this.y3 + this.vY *dT/1000;
         this.y4 = this.y4 + this.vY *dT/1000;
-        if(400 - this.y3 < -10){
+        if(this.y3 + 1 > 401){
             this.vY = -this.vY}
-        if(400 - this.x3 < -10 ){
+        if(this.x2 + 5 > 401 ){
             this.vX = -this.vX}
-        if(this.y - 400 < -10) {
+        if(this.y < 0) {
             this.vY = -this.vY}
-        if(this.x2 - 400 < -10 ){
+        if(this.x2 < 0){
             this.vX = -this.vX}
     }
 }
@@ -89,8 +89,8 @@ lapiz3.y= 5;
 lapiz3.y2 = 50;
 lapiz3.y3 = 63;
 lapiz3.y4 = 10;
-lapiz3.vX = 80;
-lapiz3.vY = 30;
+lapiz3.vX = 50;
+lapiz3.vY = 43;
 
 
 drawObj.draw =  function(){
